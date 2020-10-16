@@ -12,7 +12,7 @@ body {
 } */
 
 .container{
-  margin-left: 100px;
+  margin-left: 70px;
 }
 
 .header {
@@ -22,6 +22,7 @@ body {
 
 .main {
   display: grid;
+  position: relative;
 }
 
 .content__title {
@@ -52,6 +53,7 @@ body {
   border-radius: 12px;
   cursor: pointer;
   outline: none;
+  margin-bottom: 75px;
   
 }
 
@@ -99,7 +101,6 @@ body {
   cursor: initial;
 }
 
-.questions__subscribe,
-.questions__review {
+.hidden {
   display: none;
 }
