@@ -1,3 +1,105 @@
 body {
-    font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  background: 
+    url('images/background.png') top 187px right 0 no-repeat,
+    url('images/background-animate.png') top 0  right 0 no-repeat;
+  /* animation: animatedBackground 3s linear infinite; */
+}
+
+/* @keyframes animatedBackground {
+  from { background-position: 0 0; }
+  to { background-position: 110% 0; }
+} */
+
+.container{
+  margin-left: 100px;
+}
+
+.header {
+  margin-top: 150px;
+  margin-bottom: 56px;
+}
+
+.main {
+  display: grid;
+}
+
+.content__title {
+  width: 462px;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 60px;
+  margin-bottom: 20px;
+}
+
+.content__text {
+  width: 505px;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 27px;
+  margin-bottom: 100px;
+}
+
+.content__btn {}
+
+.btn {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 27px;
+  width: 210px;
+  height: 65px;
+  border:  none;
+  border-radius: 12px;
+  cursor: pointer;
+  outline: none;
+  
+}
+
+.content__btn-bue{
+  color: #fff;
+  background-color: #000;
+  margin-right: 10px;
+  position: relative;
+}
+
+.content__btn-bue:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.content__btn-bue::before {
+  content: '';
+  position: absolute;
+  width: 52px;
+  height: 52px;
+  background-image: url('./images/face-bue.png');
+  top: -52px;
+  left: 79px;
+  cursor: initial;
+}
+
+.content__btn-cancel {
+  color: #000;
+  background-color: #FBCB03;
+  margin-left: 10px;
+  position: relative;
+}
+
+.content__btn-cancel:hover {
+  background-color: #E6B901;
+}
+
+.content__btn-cancel::before {
+  content: '';
+  position: absolute;
+  width: 44px;
+  height: 44px;
+  background-image: url('./images/face-cancel.png');
+  top: -44px;
+  left: 83px;
+  cursor: initial;
+}
+
+.questions__subscribe,
+.questions__review {
+  display: none;
 }

@@ -9,62 +9,64 @@
   <title>Document</title>
 </head>
 <body>
-  <header class="header">
-    <div class="logo">
-    </div>
-  </header>
-  <main class="main">
+  <div class="container">
+    <header class="header">
+      <a class="header__logo" href="#"><img src="images/logo.png" alt="company logo"></a>
+    </header>
 
-    <section class="content">
-      <div class="content__title">
-        Конференции, которые нужны
-      </div>
-      <div class="content__text">
-        Мы, JUG Ru Group, делаем крупнейшие конференции для программистов и сочувствующих.
-        С нас — крутая программа, топовые спикеры, технические доклады без воды.
-        С вас — готовность смотреть и общаться.
-      </div>
-      <div class="content__btn">
-        <button id="btn-bue" class="content__btn-bue"> Купить билет </button>
-        <button id="btn-cancel" class="content__btn-cancel"> Послать в жопу </button>
-      </div>
-    </section>
+    <main class="main">
 
-    <section class="questions__subscribe">
-      <div class="questions__subscribe-wrapper">
-        <div class="questions__subscribe-title">
-          Я хочу знать, когда будет офлайн
+      <section class="content">
+        <div class="content__title">
+          Конференции, которые нужны
         </div>
-        <div class="questions__subscribe-form">
-          <input id="email" type="email" class="questions__subscribe-email" placeholder="Укажите email">
-          <button class="questions__subscribe-btn"> Подписаться </button>
-          <a href="#" class="questions__subscribe-license">Нажимая на кнопку вы соглашаетесь на обработку персональных данных</a>
+        <div class="content__text">
+          <p>Мы, JUG Ru Group, делаем крупнейшие конференции для программистов и сочувствующих.</p>
+          <p>С нас — крутая программа, топовые спикеры, технические доклады без воды.</p>
+          <p>С вас — готовность смотреть и общаться.</p>
         </div>
-        <a href="#" class="questions__subscribe-back">Я кликнул просто посмотреть</a>
-        <div class="questions__subscribe-sucsess">
-          Спасибо, что подписались на нашу рассылку!
+        <div class="content__btn">
+          <button id="btn-bue" class="content__btn-bue btn"> Купить билет </button>
+          <button id="btn-cancel" class="content__btn-cancel btn"> Послать в жопу </button>
         </div>
-      </div>
+      </section>
 
-    </section>
-    <section class="questions__review">
-      <div class="questions__review-wrapper">
-        <div class="questions__review-title">
-          Идите в жопу!
+      <section class="questions__subscribe">
+        <div class="questions__subscribe-wrapper">
+          <div class="questions__subscribe-title">
+            Я хочу знать, когда будет офлайн
+          </div>
+          <div class="questions__subscribe-form">
+            <input id="email" type="email" class="questions__subscribe-email" placeholder="Укажите email">
+            <button class="questions__subscribe-btn"> Подписаться </button>
+            <a href="#" class="questions__subscribe-license">Нажимая на кнопку вы соглашаетесь на обработку персональных данных</a>
+          </div>
+          <a href="#" class="questions__subscribe-back">Я кликнул просто посмотреть</a>
+          <div class="questions__subscribe-sucsess">
+            Спасибо, что подписались на нашу рассылку!
+          </div>
         </div>
-        <div class="questions__review-items">
-          <button class="questions__review-item"> Вы свои цены видели? </button>
-          <button class="questions__review-item"> Доклады ни о чем </button>
-          <button class="questions__review-item"> У вас там всё хорошо? </button>
-          <button class="questions__review-item"> Денег нет, но вы держитесь </button>
+
+      </section>
+      <section class="questions__review">
+        <div class="questions__review-wrapper">
+          <div class="questions__review-title">
+            Идите в жопу!
+          </div>
+          <div class="questions__review-items">
+            <button class="questions__review-item"> Вы свои цены видели? </button>
+            <button class="questions__review-item"> Доклады ни о чем </button>
+            <button class="questions__review-item"> У вас там всё хорошо? </button>
+            <button class="questions__review-item"> Денег нет, но вы держитесь </button>
+          </div>
+          <a href="#" class="questions__review-back">Я кликнул просто посмотреть</a>
+          <div class="questions__review-sucsess">
+            Спасибо, что поделились!
+          </div>
         </div>
-        <a href="#" class="questions__review-back">Я кликнул просто посмотреть</a>
-        <div class="questions__review-sucsess">
-          Спасибо, что поделились!
-        </div>
-      </div>
-    </section>
-  </main>
-  <script src="main.js">
+      </section>
+    </main>
+  </div>
 </body>
+<script src="main.js"></script>
 </html>
