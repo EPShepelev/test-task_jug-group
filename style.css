@@ -1,15 +1,16 @@
 body {
   font-family: 'Montserrat', sans-serif;
+  position: absolute;
   background: 
     url('images/background.png') top 187px right 0 no-repeat,
-    url('images/background-animate.png') top 0  right 0 no-repeat;
-  /* animation: animatedBackground 3s linear infinite; */
+    url('images/background-animate.png') top -1px left 550px no-repeat;
+  animation: animatedBackground 2s linear infinite; 
 }
 
-/* @keyframes animatedBackground {
-  from { background-position: 0 0; }
-  to { background-position: 110% 0; }
-} */
+@keyframes animatedBackground {
+  from { background-position: top 187px right 0, top -1px left 550px; }
+  to { background-position: top 187px right 0, top -50px left 630px; }
+}
 
 .container{
   margin-left: 70px;
