@@ -9,7 +9,7 @@ const subscribeBtn = document.querySelector('.questions__subscribe-btn');
 const questionsReview = document.querySelector('.questions__review');
 const reviewItemBtns = document.querySelectorAll('.questions__review-item');
 
-// const questionsSubscribeWrapper = document.querySelector('.questions__subscribe-wrapper');
+const questionsSubscribeWrapper = document.querySelector('.questions__subscribe-wrapper');
 // const questionsReviewWrapper = document.querySelector('.questions__review-wrapper');
 
 
@@ -45,4 +45,8 @@ for (let i = 0; reviewItemBtns.length; i++) {
   reviewItemBtns[i].addEventListener("click", reviewItemHandler)
 };
 
-
+window.onclick = function(event) {
+  if (event.target == questionsSubscribeWrapper) {
+    questionsSubscribeWrapper.style.display = "none";
+  }
+}
