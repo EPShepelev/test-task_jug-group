@@ -6,43 +6,44 @@ const buttonBueBack = document.querySelector('.questions__subscribe-back');
 const buttonReviewBack = document.querySelector('.questions__review-back');
 const subscribeForm = document.querySelector('.questions__subscribe-form');
 const subscribeBtn = document.querySelector('.questions__subscribe-btn');
-const questionsReview = document.querySelector('.questions__review');
+// const questionsReview = document.querySelector('.questions__review');
 const reviewItemBtns = document.querySelectorAll('.questions__review-item');
-
+const questionsReviewWrapper = document.querySelector('.questions__review-wrapper');
 // const questionsSubscribeWrapper = document.querySelector('.questions__subscribe-wrapper');
-// const questionsReviewWrapper = document.querySelector('.questions__review-wrapper');
 
+buttonBue.onclick = function() {
+  subscribeWindow.style.display = "block";
+}
 
-buttonBue.addEventListener("click", function() {
-  subscribeWindow.classList.remove('hidden')
-  subscribeWindow.classList.add('questions__subscribe-visible')
-});
+buttonCancel.onclick = function() {
+  reviewWindow.style.display = "block";
+}
 
-buttonCancel.addEventListener("click", function() {
-   reviewWindow.classList.remove('hidden')
-   reviewWindow.classList.add('questions__review-visible')
-});
+buttonBueBack.onclick = function() {
+  subscribeWindow.style.display = "none";
+}
 
-buttonBueBack.addEventListener("click", function() {
-  subscribeWindow.classList.remove('questions__subscribe-visible')
-  subscribeWindow.classList.add('hidden')
-});
+buttonReviewBack.onclick = function() {
+  reviewWindow.style.display = "none";
+}
 
-buttonReviewBack.addEventListener("click", function() {
-  reviewWindow.classList.remove('questions__review-visible')
-  reviewWindow.classList.add('hidden')
-});
+window.onclick = function(event) {
+  if (event.target == subscribeWindow || event.target == reviewWindow) {
+    subscribeWindow.style.display = "none";
+    reviewWindow.style.display = "none";
+    window.location.reload();
+  }
+}
 
 subscribeBtn.addEventListener("click", function() {
-  subscribeForm.innerHTML = '<div class="questions__subscribe-sucsess">Спасибо, что подписались на нашу рассылку!</div>';
+  subscribeForm.innerHTML = '<div class="questions__subscribe-done">Спасибо, что подписались на нашу рассылку!</div>';
 });
 
 const reviewItemHandler = () => {
-  questionsReview.innerHTML = '<div class="questions__review-sucsess">Спасибо, что поделились!</div>';
+  questionsReviewWrapper.innerHTML = '<div class="questions__review-done">Спасибо, что поделились!</div>';
 };
 
 for (let i = 0; reviewItemBtns.length; i++) {
   reviewItemBtns[i].addEventListener("click", reviewItemHandler)
 };
-
 
