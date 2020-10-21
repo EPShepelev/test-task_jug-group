@@ -1,30 +1,27 @@
 body {
   font-family: 'Montserrat', sans-serif;
-  position: absolute;
-   background: url('images/background.png') top 187px right 0 no-repeat,
+  
 }
-
-.container{
-  margin-left: 70px;
-  position: relative;
- 
-}
-
 
 .container__background {
-  position: absolute;
-  left: 740px;
-  top: -100px;
-  width: 700px;
-  height: 700px;
   overflow: hidden;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 700px;
+  height: 500px;
 }
 
 .container__background-animate {
   width: 100%;
   height: 100%;
-  background: repeating-linear-gradient(0, white 0, white 80px, black 80px, black 160px);
-  transform: rotate(45deg) translateX(100px);
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 200%;
+  width: 200%;
+  transform: rotate(45deg);
+  background: repeating-linear-gradient(0, white 0, white 70px, black 70px, black 140px);
   animation: movingTo 1s linear infinite;
 }
 
@@ -33,19 +30,18 @@ body {
     background-position-y: 0px;
   }
   to {
-    background-position-y: -160px;
+    background-position-y: -140px;
   }
-}
-
+} 
 
 .header {
-  margin-top: 150px;
+  margin-top: 100px;
   margin-bottom: 56px;
 }
 
 .main {
-  display: grid;
   position: relative;
+  background: url('images/background.png') top 0 right 0 no-repeat;
 }
 
 .content__title {
@@ -63,8 +59,6 @@ body {
   line-height: 27px;
   margin-bottom: 100px;
 }
-
-.content__btn {}
 
 .btn {
   font-weight: 300;
