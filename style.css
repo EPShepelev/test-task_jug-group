@@ -1,20 +1,42 @@
 body {
   font-family: 'Montserrat', sans-serif;
   position: absolute;
-  background: 
-    url('images/background.png') top 187px right 0 no-repeat,
-    url('images/background-animate.png') top -1px left 540px no-repeat;
-  animation: animatedBackground 2s linear infinite; 
-}
-
-@keyframes animatedBackground {
-  from { background-position: top 187px right 0, top -1px left 550px; }
-  to { background-position: top 187px right 0, top -50px left 630px; }
+   background: url('images/background.png') top 187px right 0 no-repeat,
 }
 
 .container{
   margin-left: 70px;
+  position: relative;
+ 
 }
+
+
+.container__background {
+  position: absolute;
+  left: 740px;
+  top: -100px;
+  width: 700px;
+  height: 700px;
+  overflow: hidden;
+}
+
+.container__background-animate {
+  width: 100%;
+  height: 100%;
+  background: repeating-linear-gradient(0, white 0, white 80px, black 80px, black 160px);
+  transform: rotate(45deg) translateX(100px);
+  animation: movingTo 1s linear infinite;
+}
+
+@keyframes movingTo {
+  from {
+    background-position-y: 0px;
+  }
+  to {
+    background-position-y: -160px;
+  }
+}
+
 
 .header {
   margin-top: 150px;
@@ -223,7 +245,6 @@ body {
 
 .questions__subscribe-back,
 .questions__review-back { 
-  padding-left: 38px; 
   width: 450px;
   height: 36px;
   font-weight: 600;
@@ -235,9 +256,11 @@ body {
 
 .questions__subscribe-back {
   color: #000;
+  margin-left: 38px; 
 }
 .questions__review-back {
   color: #fff;
+  margin-left: 65px; 
 }
 
 .questions__subscribe-back::before {
@@ -247,7 +270,7 @@ body {
   height: 35px;
   background-image: url('./images/arrow.svg');
   top: 0;
-  left: 0;
+  left: -30px;
 }
 
 .questions__review-back::before {
@@ -257,7 +280,7 @@ body {
   height: 35px;
   background-image: url('./images/arrow-white.svg');
   top: 0;
-  left: 0;
+  left: -30px;
 }
 
 .questions__subscribe-done {
@@ -344,4 +367,8 @@ body {
   background-image: url('./images/tumbsup.png');
   top: -120px;
   left: 145px;
+}
+
+@media screen and (max-width: 479px) {
+
 }
