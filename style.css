@@ -1,15 +1,14 @@
 body {
   font-family: 'Montserrat', sans-serif;
-  
 }
 
 .container__background {
   overflow: hidden;
   position: absolute;
-  top: 0;
+  top: 0px;
   right: 0;
   width: 700px;
-  height: 500px;
+  height: 700px;
 }
 
 .container__background-animate {
@@ -35,12 +34,17 @@ body {
 } 
 
 .header {
-  margin-top: 100px;
-  margin-bottom: 56px;
+  display: flex;
+  max-width: 1400px;
+  margin: 100px auto 56px;
 }
 
 .main {
   position: relative;
+  display: flex;
+  max-width: 1400px;
+  margin: 0 auto;
+  justify-content: flex-start;
   background: url('images/background.png') top 0 right 0 no-repeat;
 }
 
