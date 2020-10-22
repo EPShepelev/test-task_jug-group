@@ -5,15 +5,13 @@ body {
 .container__background {
   overflow: hidden;
   position: absolute;
-  top: 0px;
+  top: 0;
   right: 0;
   width: 700px;
   height: 700px;
 }
 
 .container__background-animate {
-  width: 100%;
-  height: 100%;
   position: absolute;
   top: 0px;
   left: 0px;
@@ -33,6 +31,15 @@ body {
   }
 } 
 
+.container__static {
+  background: url('images/background.png') top 0 right 0 no-repeat;
+  width: 750px;
+  height: 700px;
+  position: absolute;
+  right: 0;
+  top: 250px;
+}
+
 .header {
   display: flex;
   max-width: 1400px;
@@ -45,7 +52,6 @@ body {
   max-width: 1400px;
   margin: 0 auto;
   justify-content: flex-start;
-  background: url('images/background.png') top 0 right 0 no-repeat;
 }
 
 .content__title {
